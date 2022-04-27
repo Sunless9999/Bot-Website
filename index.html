@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>SunBot</title>
+  </head>
+  <body>
+    <section id="about-bot">
+      <nav>
+        <div class="bot__logo">SunBot</div>
+        <ul class="nav__link--list">
+          <li
+            class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+          >
+            About
+            <ul class="nav__link-item--drop">
+              <li class="nav__item--drop" onclick="toggleModal()">About Bot</li>
+              <li class="nav__item--drop">Commands</li>
+              <li class="nav__item--drop">Team</li>
+            </ul>
+          </li>
+          <li>
+            <a
+              class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+              href="#features"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link--anchor nav__link--anchor-primary"
+              href="#invite"
+              >Invite</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="flex flex-1">
+          <div class="about-bot__info row">
+            <div class="about-bot__info--container">
+              <figure class="about-bot__picture--mask">
+                <img src="" alt="" />
+              </figure>
+              <h1 class="about-bot__info--title">
+                Hey! I'm <span class="text--purple">SunBot</span>&nbsp;<span
+                  class="wave"
+                  >👋</span
+                >
+              </h1>
+              <p class="about-bot__info--para">
+                I'm a <strong class="text--purple">Discord Bot</strong> and I'm
+                here to improve your Discord experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">Here's more about the bot.</h3>
+          <h4 class="modal__sub-title">Verified Discord Bot.</h4>
+          <p class="modal__para">
+            This bot is made to
+            <b class="text--purple">improve your Discord Experience</b>. It has
+            various intentions like
+            <b class="text--purple">moderation, fun, utility</b> and more.
+            <br />
+            The bot has been made by
+            <b class="text--purple">professionals</b> and is
+            <b class="text--purple">open source</b>. Just put more text if you
+            want i cant think of anything
+          </p>
+        </div>
+        <div class="modal__half modal__languages">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__sub-title--languages">
+            <b class="text--purple">Tech</b> used for this project.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--languages">
+            We have used a lot of <b class="text--purple">technologies</b> to
+            build this project. They're all listed down below
+          </h4>
+          <div class="modal__technologies">
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                alt=""
+              />
+              <span class="tech__name">JavaScript</span>
+            </figure>
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                alt=""
+              />
+              <span class="tech__name">MongoDB</span>
+            </figure>
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                alt=""
+              />
+              <span class="tech__name">TypeScript</span>
+            </figure>
+            <figure class="modal__tech">
+              <img
+                class="modal__tech--img"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png"
+                alt=""
+              />
+              <span class="tech__name">NPM</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Bot <strong class="text--purple">Features</strong></h2>
+        <div class="features__row">
+          <div class="features__col">
+            <i class="fa fa-bolt icon"></i>
+            <h3>Fast</h3>
+            <p class="features__para">
+              This is one of the fastest discord bots so make sure to invite it
+            </p>
+          </div>
+          <div class="features__col">
+            <i class="fa fa-lock icon"></i>
+            <h3>Secure</h3>
+            <p class="features__para">
+              This bot is one of the most secure bots on discord so don't worry
+              you're safe
+            </p>
+          </div>
+          <div class="features__col">
+            <i class="fa fa-smile-o icon"></i>
+            <h3>Happy Users</h3>
+            <p class="features__para">
+              A lot of people liked the bot. Invite the bot in your server and
+              give us your opinion
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="commands"></section>
+
+    <section id="invite"></section>
+  </body>
+</html>
