@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="index.js"></script>
+    <script src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -23,8 +23,10 @@
             About
             <ul class="nav__link-item--drop">
               <li class="nav__item--drop" onclick="toggleModal()">About Bot</li>
-              <li class="nav__item--drop">Commands</li>
-              <li class="nav__item--drop">Team</li>
+              <li class="nav__item--drop">
+                <a class="nav__item-drop--link" href="#commands">Commands</a>
+              </li>
+              <li class="nav__item--drop" onclick="toggleTeamModal()">Team</li>
             </ul>
           </li>
           <li>
@@ -36,8 +38,9 @@
           </li>
           <li>
             <a
+              target="_blank"
               class="nav__link--anchor nav__link--anchor-primary"
-              href="#invite"
+              href=""
               >Invite</a
             >
           </li>
@@ -51,14 +54,20 @@
                 <img src="" alt="" />
               </figure>
               <h1 class="about-bot__info--title">
-                Hey! I'm <span class="text--purple">SunBot</span>&nbsp;<span
+                Hey! I'm <span class="text--pink">SunBot</span>&nbsp;<span
                   class="wave"
                   >👋</span
                 >
               </h1>
               <p class="about-bot__info--para">
-                I'm a <strong class="text--purple">Discord Bot</strong> and I'm
-                here to improve your Discord experience
+                I'm a <strong class="text--pink">Discord Bot</strong> and I'm
+                here to improve your Discord experience.
+                <br />
+                Here's
+                <b class="about-bot__info--more" onclick="toggleModal()"
+                  >more about</b
+                >
+                the bot
               </p>
             </div>
           </div>
@@ -70,23 +79,23 @@
           <h4 class="modal__sub-title">Verified Discord Bot.</h4>
           <p class="modal__para">
             This bot is made to
-            <b class="text--purple">improve your Discord Experience</b>. It has
+            <b class="text--pink">improve your Discord Experience</b>. It has
             various intentions like
-            <b class="text--purple">moderation, fun, utility</b> and more.
+            <b class="text--pink">moderation, fun, utility</b> and more.
             <br />
             The bot has been made by
-            <b class="text--purple">professionals</b> and is
-            <b class="text--purple">open source</b>. Just put more text if you
+            <b class="text--pink">professionals</b> and is
+            <b class="text--pink">open source</b>. Just put more text if you
             want i cant think of anything
           </p>
         </div>
         <div class="modal__half modal__languages">
           <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__sub-title--languages">
-            <b class="text--purple">Tech</b> used for this project.
+            <b class="text--pink">Tech</b> used for this project.
           </h3>
           <h4 class="modal__sub-title modal__sub-title--languages">
-            We have used a lot of <b class="text--purple">technologies</b> to
+            We have used a lot of <b class="text--pink">technologies</b> to
             build this project. They're all listed down below
           </h4>
           <div class="modal__technologies">
@@ -121,11 +130,55 @@
           </div>
         </div>
       </div>
+      <div class="modal__two">
+        <div class="modal__half--two modal__devs">
+          <h3 class="modal__two--title">Developer Team</h3>
+          <h4 class="modal__two-sub--title">
+            These are the developers who helped with this project.
+          </h4>
+          <p class="modal__two--para">
+            <b class="text--pink">Sunless#9999</b>
+            <br />
+            <b class="text--pink">Wilson#0159</b>
+            <br />
+            <b class="text--pink">SpikeThatMike#6397</b>
+            <br />
+            <b class="text--pink">ka0s#7275</b>
+            <br />
+            <b class="text--pink">KevinFoged#1138</b>
+            <br />
+            <b class="text--pink">SorrowInRain#9035</b>
+          </p>
+        </div>
+        <div class="modal__half--two modal__designers">
+          <i
+            class="fas fa-times modal__exit click"
+            onclick="toggleTeamModal()"
+          ></i>
+          <h3 class="modal__two--title">Designer Team</h3>
+          <h4 class="modal__two-sub--title">
+            These are the designers who helped with this project
+          </h4>
+          <p class="modal__two--para">
+            <b class="text--pink">Sunless#9999</b>
+            <br />
+            <b class="text--pink">Wilson#0159</b>
+            <br />
+            <b class="text--pink">SpikeThatMike#6397</b>
+            <br />
+            <b class="text--pink">ka0s#7275</b>
+            <br />
+            <b class="text--pink">KevinFoged#1138</b>
+            <br />
+            <b class="text--pink">SorrowInRain#9035</b>
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="features">
       <div class="container">
-        <h2>Bot <strong class="text--purple">Features</strong></h2>
+        <h2>Bot <strong class="text--pink">Features</strong></h2>
         <div class="features__row">
           <div class="features__col">
             <i class="fa fa-bolt icon"></i>
@@ -154,8 +207,140 @@
       </div>
     </section>
 
-    <section id="commands"></section>
+    <section id="commands">
+      <h2>All <strong class="text--pink">Commands</strong></h2>
+      <h3><strong class="text--pink">Prefix</strong> = /</h3>
+      <div class="accordion">
+        <div>
+          <input
+            type="radio"
+            name="example_accordion"
+            id="Moderation"
+            class="accordion__input"
+          />
+          <label for="Moderation" class="accordion__label">Moderation</label>
+          <div class="accordion__content">
+            <p class="accordion__text">
+              <strong class="text--pink">ban</strong> - Bans a user from the
+              server
+              <br />
+              <strong class="text--pink">kick</strong> - Kicks a user from the
+              server
+              <br />
+              <strong class="text--pink">lock</strong> - Locks a specified
+              channel
+              <br />
+              <strong class="text--pink">role</strong> - Gives a user the
+              specified role
+              <br />
+              <strong class="text--pink">slowmode</strong> - Sets the slowmode
+              of a channel
+              <br />
+              <strong class="text--pink">unlock</strong> - Unlocks a specified
+              channel
+              <br />
+              <strong class="text--pink">unmute</strong> - Unmutes a user
+              <br />
+              <strong class="text--pink">mute</strong> - Mutes a user
+              <br />
+              <strong class="text--pink">warn</strong> - Warns a user
+              <br />
+              <strong class="text--pink">clear</strong> - clears a specified
+              amount of messages
+            </p>
+          </div>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="example_accordion"
+            id="Utility"
+            class="accordion__input"
+          />
+          <label for="Utility" class="accordion__label">Utility</label>
+          <div class="accordion__content">
+            <p class="accordion__text">
+              <strong class="text--pink">8ball</strong> - Ask a question to the
+              magic 8Ball.
+              <br />
+              <strong class="text--pink">asciiArt</strong> - Displays an ascii
+              art image.
+              <br />
+              <strong class="text--pink">avatar</strong>avatar - Displays the
+              avatar of a user.
+              <br />
+              <strong class="text--pink">help</strong> - Shows all the commands
+              <br />
+              <strong class="text--pink">meme</strong> - Shows a meme from
+              reddit
+              <br />
+              <strong class="text--pink">serverinfo</strong> - Shows information
+              about a server
+              <br />
+              <strong class="text--pink">userinfo</strong> - Shows information
+              about a user
+            </p>
+          </div>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="example_accordion"
+            id="Systems"
+            class="accordion__input"
+          />
+          <label for="Systems" class="accordion__label">Systems</label>
+          <div class="accordion__content">
+            <p class="accordion__text">
+              <strong class="text--pink">ticket</strong> - Adds a member to a
+              ticket
+              <br />
+              <strong class="text--pink">ticket-setup</strong> - Sets up the
+              ticket system
+              <br />
+              <strong class="text--pink">voice</strong> - Control your private
+              voice channel
+              <br />
+              <strong class="text--pink">afk</strong> - Sets your status to afk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="invite"></section>
+    <footer class="footer">
+      <div class="footer__socials">
+        <a class="footer__socials-link" href=""
+          ><i class="fab fa-discord"></i
+        ></a>
+        <a class="footer__socials-link" href=""><i class="fas fa-link"></i></a>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__list-link">
+          <a class="footer__list" href="#about-bot">Home</a>
+        </li>
+        <li class="footer__list-link">
+          <a class="footer__list" href="#features">Features</a>
+        </li>
+        <a class="footer__list" href="#about-bot"
+          ><li class="footer__list-link" onclick="toggleTeamModal()">
+            Team
+          </li></a
+        >
+        <a class="footer__list" href="#about-bot"
+          ><li class="footer__list-link" onclick="toggleModal()">About</li></a
+        >
+      </ul>
+      <p class="footer__para">
+        <span class="text--pink"
+          ><a
+            class="footer__para-link"
+            href="https://discord.com/users/787681393060741171"
+            >Sunless#9999</a
+          ></span
+        >
+        &copy; 2022 Designed
+      </p>
+    </footer>
   </body>
 </html>
