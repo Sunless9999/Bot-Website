@@ -29,6 +29,32 @@ li {
   list-style: none;
 }
 
+#btnScrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+.button-scroll {
+  color: #1a1a1d;
+}
+
+#btnScrollToTop:focus {
+  background-color: #fff;
+  color: #c3073f;
+}
+
 .row {
   width: 100%;
   max-width: 800px;
@@ -668,12 +694,12 @@ nav {
 }
 
 .footer__socials-link {
-  font-size: 24px;
+  font-size: 34px;
   color: inherit;
   border: 1px solid #ccc;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -693,20 +719,19 @@ nav {
   line-height: 1.6;
   margin-bottom: 0;
   text-align: center;
-}
-
-.footer__list {
   color: inherit;
   text-decoration: none;
-  opacity: 0.8;
 }
 
 .footer__list-link {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
   display: inline-block;
   padding: 0 30px;
 }
 
-.footer__list:hover {
+.footer__list-link:hover {
   opacity: 1;
 }
 
