@@ -471,12 +471,6 @@ nav {
   color: #c3073f;
 }
 
-.about-bot__img--container {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
 .about-bot__img {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
