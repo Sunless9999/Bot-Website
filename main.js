@@ -1,4 +1,7 @@
 let isModalOpen = false;
+let isTeamModalOpen = false;
+let contrastToggle = false;
+
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
@@ -8,7 +11,6 @@ function toggleModal() {
   document.body.classList += " modal--open";
 }
 
-let isTeamModalOpen = false;
 function toggleTeamModal() {
   if (isTeamModalOpen) {
     isTeamModalOpen = false;
@@ -16,4 +18,13 @@ function toggleTeamModal() {
   }
   isTeamModalOpen = true;
   document.body.classList += " modal__open";
+}
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme";
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
 }

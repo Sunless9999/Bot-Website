@@ -18,7 +18,7 @@
         <div class="bot__logo">SunBot</div>
         <ul class="nav__link--list">
           <li
-            class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+            class="nav__link--anchor link__hover-effect--purple"
           >
             About
             <ul class="nav__link-item--drop">
@@ -31,7 +31,7 @@
           </li>
           <li>
             <a
-              class="nav__link--anchor link__hover-effect link__hover-effect--purple"
+              class="nav__link--anchor link__hover-effect--purple"
               href="#features"
               >Features</a
             >
@@ -39,9 +39,17 @@
           <li>
             <a
               target="_blank"
-              class="nav__link--anchor nav__link--anchor-primary"
+              class="nav__link--anchor link__hover-effect--purple"
               href=""
               >Invite</a
+            >
+          </li>
+          <li class="click">
+            <a
+              class="nav__link--anchor"
+              href="#"
+              onclick="toggleContrast()"
+              ><i class="fas fa-adjust"></i></a
             >
           </li>
         </ul>
@@ -137,7 +145,7 @@
         <div class="modal__half--two modal__devs">
           <h3 class="modal__two--title">Developer Team</h3>
           <h4 class="modal__two-sub--title">
-            These are the developers who helped with this project.
+            These are the developers who helped with the bot.
           </h4>
           <p class="modal__two--para">
             <b class="text--pink">Sunless#9999</b>
@@ -160,7 +168,7 @@
           ></i>
           <h3 class="modal__two--title">Designer Team</h3>
           <h4 class="modal__two-sub--title">
-            These are the designers who helped with this project
+            These are the designers of the bot.
           </h4>
           <p class="modal__two--para">
             <b class="text--pink">Sunless#9999</b>
@@ -181,18 +189,18 @@
 
     <section id="features">
       <div class="container">
-        <h2>Bot <strong class="text--pink">Features</strong></h2>
+        <h2 class="title">Bot <strong class="text--pink">Features</strong></h2>
         <div class="features__row">
           <div class="features__col">
             <i class="fa fa-bolt icon"></i>
-            <h3>Fast</h3>
+            <h3 class="sub__title">Fast</h3>
             <p class="features__para">
               This is one of the fastest discord bots so make sure to invite it
             </p>
           </div>
           <div class="features__col">
             <i class="fa fa-lock icon"></i>
-            <h3>Secure</h3>
+            <h3 class="sub__title">Secure</h3>
             <p class="features__para">
               This bot is one of the most secure bots on discord so don't worry
               you're safe
@@ -200,7 +208,7 @@
           </div>
           <div class="features__col">
             <i class="fa fa-smile-o icon"></i>
-            <h3>Happy Users</h3>
+            <h3 class="sub__title">Happy Users</h3>
             <p class="features__para">
               A lot of people liked the bot. Invite the bot in your server and
               give us your opinion
@@ -211,8 +219,8 @@
     </section>
 
     <section id="commands">
-      <h2>All <strong class="text--pink">Commands</strong></h2>
-      <h3><strong class="text--pink">Prefix</strong> = /</h3>
+      <h2 class="title">All <strong class="text--pink">Commands</strong></h2>
+      <h3 class="sub__title"><strong class="text--pink">Prefix</strong> = /</h3>
       <div class="accordion">
         <div>
           <input
@@ -314,33 +322,30 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__socials">
-        <a class="footer__socials-link" href=""
-          ><i class="fab fa-discord"></i
-        ></a>
-        <a class="footer__socials-link" href=""><i class="fas fa-link"></i></a>
-      </div>
-      <ul class="footer__list">
-        <li class="footer__list-link">
-          <a class="footer__list" href="#about-bot">Home</a>
-        </li>
-        <li class="footer__list-link">
-          <a class="footer__list" href="#features">Features</a>
-        </li>
-        <a class="footer__list" href="#about-bot"
-          ><li class="footer__list-link" onclick="toggleModal()">About</li></a
-        >
-      </ul>
-      <p class="footer__para">
-        <span class="text--pink"
-          ><a
-            class="footer__para-link"
-            href="https://discord.com/users/787681393060741171"
-            >Sunless#9999</a
-          ></span
-        >
-        &copy; 2022 Designed
-      </p>
+      <div class="container">
+        <div class="footer__row">
+           <div class="footer__socials">
+             <a class="footer__socials-link" href=""
+             ><i class="fab fa-discord"></i
+               ></a>
+           <a class="footer__socials-link" href=""><i class="fas fa-link"></i></a>
+         </div>
+         <div class="footer__list">
+           <a href="#" class="footer__link link__hover-effect--purple">Home</a>
+           <a href="#features" class="footer__link link__hover-effect--purple">Features</a>
+           <a href="#about" class="footer__link link__hover-effect--purple" onclick="toggleModal()">About</a>
+         </div>
+         <div class="footer__copyright">
+           Copyright &copy; Designed By
+           <a
+           target="_blank"
+             href="https://discord.com/users/787681393060741171"
+             ><span class="text--pink"
+             >Sunless#9999</span></a
+           >
+         </div>
+       </div>
+     </div>
     </footer>
   </body>
 </html>
